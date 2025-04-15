@@ -103,7 +103,12 @@ transition: opacity 0.5s ease, visibility 0s ease 0s;
 
 */
 
-
+@font-face {
+  font-family: 'Bonbon', sans-serif;
+  src: url('fonts/bonbon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .navbar-nav .nav-link {
   color: #242235; /* Change to your desired color */
