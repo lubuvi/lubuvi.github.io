@@ -1,0 +1,285 @@
+/* .row {
+  margin-bottom: 15px;
+
+}
+
+.item {
+  max-width:70%;
+    
+ 
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+
+  
+}
+
+.caption {
+  position: right;
+}
+
+figcaption {
+  font-size:0.8em;
+  max-width:50%;
+  float:left;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease; 
+  padding-right: 15px;
+padding-left: 15px;
+  
+}
+
+.col-md-6:hover .overlay {
+  opacity: 1;
+  
+  
+}
+
+.imaj-container {
+  width: 100%;  
+  height: auto;  
+  position: relative;
+  
+}
+
+
+.imaj {
+  width: 100%;
+  height: auto;
+  opacity: 0;  
+  visibility: hidden;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease, visibility 0s ease 0.5s;
+}  
+
+.imaj.active {
+opacity: 1;  
+visibility: visible;  
+transition: opacity 0.5s ease, visibility 0s ease 0s; 
+}  
+
+.imaj:hover {
+  opacity: 1;  
+}
+
+.imaj:hover + img {
+  transition-delay: 0.5s ease;
+  opacity: 0;
+}
+
+.imaj-container img {
+  width: 100%; 
+  height: auto;  
+}
+
+
+  
+
+.imaj-container {
+  margin: 0;  
+  padding: 0;  
+}
+
+.imaj-container img {
+  margin: 0;  
+  padding: 0;  
+}
+
+*/
+
+
+
+.navbar-nav .nav-link {
+  color: #242235; /* Change to your desired color */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Change link color on hover */
+.navbar-nav .nav-link:hover {
+  color: #5081ff; /* Change to your desired hover color */
+  font-family: 'Roboto', sans-serif;
+}
+/*
+.main-heading {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 3.3em !important;  
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  padding: 20px; 
+  margin-bottom: 0.5em;
+}
+  */
+
+
+
+.main-heading {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  padding: 20px 3em;
+  margin-bottom: 1em;
+}
+
+.boldi {
+  font-family: 'Bonbon', sans-serif;
+  font-size: 1.2em;
+  color: #5081ff !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 1.6em;
+    line-height: 1.4em;
+    padding: 10px 1em;
+    text-align: left; /* or center — up to your vibe */
+  }
+
+  .boldi {
+    font-size: 1em;
+  }
+}
+
+
+.boldii {
+  font-family: 'Bonbon', sans-serif;
+  font-size:0.7em;
+  color: #5081ff !important;
+  text-align:left !important;
+  margin: 0;
+  padding: 20px; 
+}
+
+.subhead  {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 1em !important;  
+  line-height: 1.5em;
+  margin: 0;
+  padding: 20px; 
+}
+
+.boldiii {
+  font-family: 'Bonbon', sans-serif;
+  font-size:1.7em;
+  color: #5081ff !important;
+  text-align:center;
+  margin: 0;
+  padding: 20px; 
+       
+}
+
+#biolumiImage, #allnightImage, #kaimenImage, #booksImage, #seaImage, #greenImage {
+  /* Fade in/out with opacity */
+  transition: .5s ease; 
+}
+
+ 
+
+
+.float-above {
+  position: relative;  /* Relative positioning for moving */
+  top: -20px;          /* Move the image 20px above */
+  z-index: 1;          /* Ensure the image stays above other content */
+}
+
+.figure {
+  position: relative; /* Allow caption positioning inside the figure */
+  margin-bottom: 2rem;
+}
+
+/*
+.figure-caption {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.figure:hover .figure-caption,
+.figure.show-caption .figure-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+*/
+
+.figure-caption {
+  display: block;
+  margin-top: 0.5rem;
+  background: white; /* or semi-transparent background */
+  z-index: 1;
+  position: relative;   
+  width: 100%; /* Make the caption take up the full width */
+  opacity: 0;  /* Initially hidden */
+  transition: opacity 0.3s ease;
+  text-align: center; /* Center the text inside the caption */
+  left: 50%;
+  transform: translateX(-50%); /* Center the caption */
+  padding-top:10px;
+  font-size:0.7em;
+  color:darkgrey;
+  text-transform:uppercase;
+}
+
+.figure:hover .figure-caption {
+  opacity: 1; /* Show caption on hover */
+}
+
+.figure.show-caption .figure-caption {
+  opacity: 1;
+}
+
+ 
+/*
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  background-color:#5081ff !important;
+  color:white;
+  
+}
+
+.btn-circle2.btn-lg2 {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  background-color:#white !important;
+  color:#5081ff;
+  
+}
+
+button:focus,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+  */
+
