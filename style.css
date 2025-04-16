@@ -103,7 +103,19 @@ transition: opacity 0.5s ease, visibility 0s ease 0s;
 
 */
 
- 
+ @font-face {
+  font-family: 'Bonbon';
+  src: url('fonts/Bonbon.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Bonbon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bonbon.woff2') format('woff2'),
+       url('fonts/Bonbon.woff') format('woff'),
+       url('fonts/Bonbon.ttf') format('truetype'),
+       url('fonts/Bonbon.svg#Bonbon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .navbar-nav .nav-link {
   color: #242235; /* Change to your desired color */
   font-family: 'Roboto', sans-serif;
