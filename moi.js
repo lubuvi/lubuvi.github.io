@@ -750,7 +750,7 @@ greenImage.addEventListener('mouseleave', () => {
           });
       }, {
           root: null,
-          threshold: 0.7, // Trigger when 50% of the image is in view
+          threshold: 1, // Trigger when 50% of the image is in view
       });
 
       // Observe both images
