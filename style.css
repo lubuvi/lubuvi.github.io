@@ -21,11 +21,7 @@
   margin-top: 0.5em;
   padding: 20px 3em;
   margin-bottom: 1em;
-  width: 100%; /* Ensures the element takes up full width */
 }
-
- 
-
 
 .boldi {
   font-family: 'Bonbon', sans-serif;
@@ -39,10 +35,9 @@
     font-size: 1.4em;
     line-height: 1.4em;
     padding: 10px 1em;
-    text-align: center; /* Change back to center */
-    font-weight: 400;
-    margin: 0 auto; /* Horizontally center */
-}
+    text-align: left;  
+   font-weight: 400;
+  }
   .boldi {
     font-size: 1em;
   }
