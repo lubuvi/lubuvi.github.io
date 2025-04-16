@@ -59,11 +59,11 @@ function startBiolumiImageCycle() {
   
     biolumiTimers.push(setTimeout(() => {
         biolumiImage.src = 'img/insectes.png';
-    }, 1000));
+    }, 100));
   
     biolumiTimers.push(setTimeout(() => {
         biolumiImage.src = 'img/biolumi.png';
-    }, 2000));
+    }, 1000));
   
     biolumiTimers.push(setTimeout(() => {
         startBiolumiImageCycle(); // loop
@@ -88,19 +88,19 @@ function startBiolumiImageCycle() {
 
     cospTimers.push(setTimeout(() => {
         cospImage.src = 'img/cosp3.png';
-    }, 1000));
+    }, 100));
 
     cospTimers.push(setTimeout(() => {
         cospImage.src = 'img/cosp2.png';
-    }, 2000));
+    }, 1000));
 
     cospTimers.push(setTimeout(() => {
         cospImage.src = 'img/cosp1.png';
-    }, 3000));
+    }, 1900));
 
     cospTimers.push(setTimeout(() => {
         startCospImageCycle(); // loop
-    }, 4000));
+    }, 2800));
 }
 
 function stopCospCycle() {
@@ -123,19 +123,19 @@ function stopCospCycle() {
 
       allnightTimers.push(setTimeout(() => {
           allnightImage.src = 'img/flyer2.jpg';
-      }, 1000));
+      }, 100));
 
       allnightTimers.push(setTimeout(() => {
           allnightImage.src = 'img/bracelets2.jpg';
-      }, 2000));
+      }, 1000));
 
       allnightTimers.push(setTimeout(() => {
           allnightImage.src = 'img/allnight1.jpg';
-      }, 3000));
+      }, 1900));
 
       allnightTimers.push(setTimeout(() => {
           startAllnightImageCycle(); // loop
-      }, 4000));
+      }, 2800));
   }
 
   function stopAllnightCycle() {
@@ -157,11 +157,11 @@ function stopCospCycle() {
 
     seaTimers.push(setTimeout(() => {
         seaImage.src = 'img/adv2.png';
-    }, 1000));
+    }, 100));
 
     seaTimers.push(setTimeout(() => {
         seaImage.src = 'img/adv.png';
-    }, 2000));
+    }, 1000));
 
     seaTimers.push(setTimeout(() => {
         startSeaImageCycle(); // loop
@@ -186,11 +186,11 @@ function startBooksImageCycle() {
 
   booksTimers.push(setTimeout(() => {
       booksImage.src = 'img/verso.jpg';
-  }, 1000));
+  }, 100));
 
   booksTimers.push(setTimeout(() => {
       booksImage.src = 'img/recto.jpg';
-  }, 2000));
+  }, 1000));
 
   booksTimers.push(setTimeout(() => {
       startBooksImageCycle(); // loop
@@ -215,11 +215,11 @@ function startGreenImageCycle() {
 
   greenTimers.push(setTimeout(() => {
       greenImage.src = 'img/grme3.png';
-  }, 1000));
+  }, 100));
 
   greenTimers.push(setTimeout(() => {
       greenImage.src = 'img/grme.png';
-  }, 2000));
+  }, 1000));
 
   greenTimers.push(setTimeout(() => {
       startGreenImageCycle(); // loop
@@ -244,19 +244,19 @@ function stopGreenCycle() {
 
       kaimenTimers.push(setTimeout(() => {
           kaimenImage.src = 'img/kaimen1.jpg';
-      }, 1000));
+      }, 100));
 
       kaimenTimers.push(setTimeout(() => {
           kaimenImage.src = 'img/paper1.png';
-      }, 2000));
+      }, 1000));
 
       kaimenTimers.push(setTimeout(() => {
           kaimenImage.src = 'img/paper2.png';
-      }, 3000));
+      }, 1900));
 
       kaimenTimers.push(setTimeout(() => {
           startKaimenImageCycle(); // loop
-      }, 4000));
+      }, 2800));
   }
 
   function stopKaimenCycle() {
@@ -277,23 +277,23 @@ function stopGreenCycle() {
 
     eeaTimers.push(setTimeout(() => {
         eeaImage.src = 'img/interface_eea5.jpg';
-    }, 1000));
+    }, 100));
 
     eeaTimers.push(setTimeout(() => {
         eeaImage.src = 'img/interface_eea4.jpg';
-    }, 2000));
+    }, 1000));
 
     eeaTimers.push(setTimeout(() => {
         eeaImage.src = 'img/interface_eea1.png';
-    }, 3000));
+    }, 1900));
 
     eeaTimers.push(setTimeout(() => {
         eeaImage.src = 'img/interface_eea.png';
-    }, 4000));
+    }, 2800));
 
     eeaTimers.push(setTimeout(() => {
         startEeaImageCycle(); // loop
-    }, 5000));
+    }, 3700));
 }
 
 function stopEeaCycle() {
@@ -314,23 +314,23 @@ function stopEeaCycle() {
 
     stacTimers.push(setTimeout(() => {
         stacImage.src = 'img/interface_stac4.png';
-    }, 1000));
+    }, 100));
 
     stacTimers.push(setTimeout(() => {
         stacImage.src = 'img/interface_stac5.png';
-    }, 2000));
+    }, 1000));
 
     stacTimers.push(setTimeout(() => {
         stacImage.src = 'img/interface_stac6.png';
-    }, 3000));
+    }, 1900));
 
     stacTimers.push(setTimeout(() => {
         stacImage.src = 'img/interface_stac3.png';
-    }, 4000));
+    }, 2800));
 
     stacTimers.push(setTimeout(() => {
         startStacImageCycle(); // loop
-    }, 5000));
+    }, 3700));
 }
 
 function stopStacCycle() {
@@ -353,19 +353,19 @@ function startHubinImageCycle() {
 
     hubinTimers.push(setTimeout(() => {
         hubinImage.src = 'img/interface_hubin_2.jpg';
-    }, 1000));
+    }, 100));
 
     hubinTimers.push(setTimeout(() => {
         hubinImage.src = 'img/interface_hubin_3.jpg';
-    }, 2000));
+    }, 1000));
 
     hubinTimers.push(setTimeout(() => {
         hubinImage.src = 'img/interface_hubin.png';
-    }, 3000));
+    }, 1900));
 
     hubinTimers.push(setTimeout(() => {
         startHubinImageCycle(); // loop
-    }, 4000));
+    }, 2800));
 }
 
 function stopHubinCycle() {
@@ -386,23 +386,23 @@ function startTwinImageCycle() {
 
     twinTimers.push(setTimeout(() => {
         twinImage.src = 'img/interface_twinseeds_2.jpg';
-    }, 1000));
+    }, 100));
 
     twinTimers.push(setTimeout(() => {
         twinImage.src = 'img/interface_twinseeds_3.jpg';
-    }, 2000));
+    }, 1000));
 
     twinTimers.push(setTimeout(() => {
         twinImage.src = 'img/interface_twinseeds_4.jpg';
-    }, 3000));
+    }, 1900));
 
     twinTimers.push(setTimeout(() => {
         twinImage.src = 'img/interface_twinseeds.png';
-    }, 4000));
+    }, 2800));
 
     twinTimers.push(setTimeout(() => {
         startTwinImageCycle(); // loop
-    }, 5000));
+    }, 3700));
 }
 
 function stopTwinCycle() {
@@ -423,23 +423,23 @@ function startCoeImageCycle() {
 
     coeTimers.push(setTimeout(() => {
         coeImage.src = 'img/coe_2.jpg';
-    }, 1000));
+    }, 100));
 
     coeTimers.push(setTimeout(() => {
         coeImage.src = 'img/coe_3.jpg';
-    }, 2000));
+    }, 1000));
 
     coeTimers.push(setTimeout(() => {
         coeImage.src = 'img/coe_4.jpg';
-    }, 3000));
+    }, 1900));
 
     coeTimers.push(setTimeout(() => {
         coeImage.src = 'img/coe_1.jpg';
-    }, 4000));
+    }, 2800));
 
     coeTimers.push(setTimeout(() => {
         startCoeImageCycle(); // loop
-    }, 5000));
+    }, 3700));
 }
 
 function stopCoeCycle() {
@@ -750,7 +750,7 @@ greenImage.addEventListener('mouseleave', () => {
           });
       }, {
           root: null,
-          threshold: 0.5, // Trigger when 50% of the image is in view
+          threshold: 0.7, // Trigger when 50% of the image is in view
       });
 
       // Observe both images
