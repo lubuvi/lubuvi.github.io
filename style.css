@@ -1,5 +1,4 @@
- 
-.navbar-nav .nav-link {
+navbar-nav .nav-link {
   color: #242235;  
   font-family: 'Roboto', sans-serif;
 }
@@ -13,7 +12,7 @@
 
 
 .main-heading {
-  text-align: center;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
   color: #000;
   font-size: 2.5em;
