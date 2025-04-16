@@ -1,120 +1,249 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bonbon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fonts/bonbon.ttf">
+        <title>⁎＊lubuvi portfolio ⁎＊⁎</title>
+         
+    </head>
+    <body>
+      
+      <nav class="navbar navbar-expand-lg mt-4 mx-4  ">
+        <a class="navbar-brand" href="index.html"><h1 style="font-family:'bonbon', sans-serif;color:#5081ff;font-size:2.5em;">lubuvi</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav  ml-auto">
+            
+            
+            <a class="nav-link" href="interfaces.html">Interfaces</a>
+            <a class="nav-link" href="#">Contact</a>
+             
+          </ul>
+         
+        </div> 
+      </nav>
+      
+
+      <div class="container">
+         <div class="row gallery">
+          <!-- First Column -->
+          <div class="col-md-6 py-3">
+            <figure class="figure">
+            <img id="biolumiImage" src="img/biolumi.png" alt="Image 2" class="img-fluid">
+            <figcaption class="figure-caption">⁎＊⁕ Posters about fauna and flora ⁕ ⁎＊</figcaption>
+          
+          </figure>
+          </div>          
+          <!-- Second Column -->
+          <div class="col-md-6 py-3  ">
+            <figure class="figure">
+            <img id="seaImage" src="img/adv.png" alt="Image 2" class="img-fluid">
+            <figcaption class="figure-caption">⁎＊⁕ Logo and visual identity for better fisheries transparency ⁕ ⁎＊</figcaption>
+          
+          </figure>
+           
+          <figure class="figure">
+            <img src="img/esabcc.png" alt="Image 2" class="img-fluid">
+            <figcaption class="figure-caption">⁎＊⁕ Logo concept for the European Advisory Board on Climate Change ⁕ ⁎＊</figcaption>
+          
+          </figure>
+           
+          </div>  
+          
+          <h1  class="main-heading">  <span class="boldi">hello,</span> i'm a designer based in <span class="boldi">brussels</span>
+            that loves to learn things about <span class="boldi">design history</span> and work across digital and print media
+            to try to make the world a <span class="boldi">better place</span>   </h1>
+     <!-- Third Column -->
+     <div class="col-md-6 py-3">
+      <figure class="figure">
+        <img id="cospImage" src="img/cosp1.png" alt="Image 2" class="img-fluid">
+        <figcaption class="figure-caption">⁎＊⁕ LOGO AND DIGITAL IDENTITY FOR COLIVING SPACES ⁕ ⁎＊</figcaption>
+      
+      </figure>
+      <figure class="figure">
+        <img id="kaimenImage" src="img/paper2.png" alt="Image 2" class="img-fluid">
+        <figcaption class="figure-caption">⁎＊⁕ SOME BRANDING FOR A JAPANESE SEAFOOD RESTAURANT ⁕ ⁎＊</figcaption>
+      
+      </figure>
+      
+    </div> 
+
+    <!-- Fourth Column -->
+  
+
+  <div class="col-md-6 py-3">
+    <figure class="figure">
+    <img id="allnightImage" src="img/allnight1.jpg" alt="Image 2" class="img-fluid">
+    <figcaption class="figure-caption">⁎＊⁕ MUSIC FESTIVAL BRANDING ⁕ ⁎＊</figcaption>
+  
+  </figure>
  
-.navbar-nav .nav-link {
-  color: #242235;  
-  font-family: 'Roboto', sans-serif;
-}
+  </div>   
+   
+    <div class="col-md-6 py-3">
+     
+    <figure class="figure">
+      <img id="booksImage" src="img/recto.jpg" alt="Image 2" class="img-fluid">
+      <figcaption class="figure-caption">⁎＊⁕ COVERS FOR BOOKS ABOUT DESIGN HISTORY ⁕ ⁎＊</figcaption>
+    
+    </figure>
+    </div>
+    <div class="col-md-6 py-3">
+    <figure class="figure">
+          <img id="greenImage" src="img/grme.png" alt="Image 2" class="img-fluid">
+          <figcaption class="figure-caption">⁎＊⁕ LOGO AND DIGITAL IDENTITY FOR GREEN ME, NATURE BASED THERAPY ⁕ ⁎＊</figcaption>
+        
+        </figure>
+      </div>
+      
 
-
-.navbar-nav .nav-link:hover {
-  color: #5081ff;  
-  font-family: 'Roboto', sans-serif;
-}
+  
  
-
-
-.main-heading {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-  font-size: 2.5em;
-  line-height: 1.5em;
-  margin-top: 0.5em;
-  padding: 20px 3em;
-  margin-bottom: 1em;
-}
-
-.boldi {
-  font-family: 'Bonbon', sans-serif;
-  font-size: 1.2em;
-  color: #5081ff !important;
-}
-
-/* mobile responsiveness */
-@media (max-width: 768px) {
-  .main-heading {
-    font-size: 1.4em;
-    line-height: 1.4em;
-    padding: 10px 1em;
-    text-align: center;  
-   font-weight: 400;
-  }
-  .boldi {
-    font-size: 1em;
-  }
-}
-
-
-.boldii {
-  font-family: 'Bonbon', sans-serif;
-  font-size:0.7em;
-  color: #5081ff !important;
-  text-align:left !important;
-  margin: 0;
-  padding: 20px; 
-}
-
-.subhead  {
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-  font-size: 1em !important;  
-  line-height: 1.5em;
-  margin: 0;
-  padding: 20px; 
-}
-
-.boldiii {
-  font-family: 'Bonbon', sans-serif;
-  font-size:1.7em;
-  color: #5081ff !important;
-  text-align:center;
-  margin: 0;
-  padding: 20px; 
        
-}
+        
+  
+            
+          </div>  
+         
 
-#biolumiImage, #allnightImage, #kaimenImage, #booksImage, #seaImage, #greenImage {
-  /* fade in/out with opacity */
-  transition: .5s ease; 
-}
-
+        
+        <h1 class="main-heading"> i also design a lot of <span class="boldi">interfaces</span>, and sometimes <span class="boldi">code</span> websites (like this one!)   </h1>
+     
  
-
-
-.float-above {
-  position: relative;   
-  top: -20px;           
-  z-index: 1;          
-}
-
-.figure {
-  position: relative;  
-  margin-bottom: 2rem;
-}
+     
+        
+        <div class="row gallery">
+          <!-- First Column -->
+          <div class="col-md-6 py-3">
+            <figure class="figure">
+            <img id="stacImage" src="img/interface_stac3.png" alt="Image 2" class="img-fluid">
+            <figcaption class="figure-caption">⁎＊⁕ APP DESIGN FOR STUDENT ACADEMY ⁕ ⁎＊</figcaption>
+          
+          </figure>
+           
+          
+          </div>          
+          <!-- Second Column -->
+          <div class="col-md-6 py-3  ">
+            <figure class="figure">
+            <img id="eeaImage" src="img/interface_eea.png" alt="Image 2" class="img-fluid">
+            <figcaption class="figure-caption">⁎＊⁕ WEBDESIGN & ICONS FOR THE EUROPEAN SCIENTIFIC BOARD ON CLIMATE CHANGE ⁕ ⁎＊</figcaption>
+          
+          </figure>
+        
+          <figure class="figure">
+            <img id="hubinImage" src="img/interface_hubin.png" alt="Image 2" class="img-fluid">
+            <figcaption class="figure-caption">⁎＊⁕ WEBDESIGN FOR HUB-IN ⁕ ⁎＊</figcaption>
+          
+          </figure>
+          </div>  
+         
+            
+          <h1  class="main-heading">i notably <span class="boldi">worked for</span> Student Academy <span class="boldi">and</span> European institutions (at Old-Continent) </h1>
  
+          <!-- Third Column -->
+          <div class="col-md-6 py-3">
+            
+            
+     
+           
 
-.figure-caption {
-  display: block;
-  margin-top: 0.5rem;
-  background: white;  
-  z-index: 1;
-  position: relative;   
-  width: 100%; 
-  opacity: 0;  
-  transition: opacity 0.3s ease;
-  text-align: center;  
-  left: 50%;
-  transform: translateX(-50%);  
-  padding-top:10px;
-  font-size:0.7em;
-  color:darkgrey;
-  text-transform:uppercase;
-}
+            <figure class="figure">
+              <img id="twinImage" src="img/interface_twinseeds.png" alt="Image 2" class="img-fluid">
+              <figcaption class="figure-caption">⁎＊⁕ WEBDESIGN & ICONS FOR TWIN SEEDS ⁕ ⁎＊</figcaption>
 
-.figure:hover .figure-caption {
-  opacity: 1;  
-}
+              <figure class="figure">
+                <img id=" " src="img/interface_s3.png" alt="Image 2" class="img-fluid">
+                <figcaption class="figure-caption">⁎＊⁕ WEBDESIGN FOR S3 (EUROPEAN COMMISSION) ⁕ ⁎＊</figcaption>
+               
+              </figure>
+            
+            </figure>
 
-.figure.show-caption .figure-caption {
-  opacity: 1;
-} 
+            
+            
+          </div> 
+
+          <div class="col-md-6 py-3">
+            
+            <figure class="figure">
+              <img id="coeImage" src="img/coe_1.jpg" alt="Image 2" class="img-fluid">
+              <figcaption class="figure-caption">⁎＊⁕ WEBDESIGN FOR COE (COUNCIL OF EUROPE) ⁕ ⁎＊</figcaption>
+             
+            </figure>
+     
+           
+
+          
+
+           
+            
+          </div> 
+         
+
+
+
+
+
+        
+        </div>
+
+      
+        <h1 class="main-heading">that's all...<span class="boldi">for now!</span></h1>
+
+         
+       
+
+      </div>
+          
+      
+        </div>
+     
+ 
+     
+     
+
+     
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="moi.js"></script>
+        </body>
+        <footer class="bg-body-tertiary text-center text-lg-start mt-5">
+           
+          <div class="text-center p-3" >
+            
+         
+            <h1 style="font-family:'bonbon', sans-serif;color:#5081ff;"><a href="mailto:lucia.buv@gmail.com">Contact me</a></h1>
+            
+            © lubuvi 2025. Any copy or commercial use is prohibited.
+            <div class="row gallery">
+              <!-- First Column -->
+              <div class="col-md-6 py-3">
+                 Check my <a href="https://lucia-b.notion.site/lubuvi-interfaces-case-studies-fb4c828ad8c84213862274eecc2e6921?pvs=74">Notion</a> for more info about each project
+              
+              </figure>
+               
+              
+              </div>          
+              <!-- Second Column -->
+              <div class="col-md-6 py-3  ">
+                Check my <a href="https://www.linkedin.com/in/lucia-bv/">LinkedIn</a>
+              </div>  
+             
+                       
+            </div>
+          </div>
+           
+        </footer>
+</html>
