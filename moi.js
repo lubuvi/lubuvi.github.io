@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const seaImage = document.getElementById('seaImage');
   const booksImage = document.getElementById('booksImage');
   const greenImage = document.getElementById('greenImage');
+  const eeaImage = document.getElementById('eeaImage');
+  const stacImage = document.getElementById('stacImage');
+  const hubinImage = document.getElementById('hubinImage');
+  const twinImage = document.getElementById('twinImage');
+  const coeImage = document.getElementById('coeImage');
 
   let biolumiHoverTimer = null;
   let biolumiOriginalImage = biolumiImage.src;
@@ -31,8 +36,21 @@ document.addEventListener('DOMContentLoaded', function () {
   let greenTimers = [];
   let greenOriginalImage = greenImage.src;
 
+  let eeaTimers = [];
+  let eeaOriginalImage = eeaImage.src;
 
-  
+  let stacTimers = [];
+  let stacOriginalImage = stacImage.src;
+
+  let hubinTimers = [];
+  let hubinOriginalImage = hubinImage.src;
+
+  let twinTimers = [];
+  let twinOriginalImage = twinImage.src;
+
+  let coeTimers = [];
+  let coeOriginalImage = coeImage.src;
+
 
   // === Biolumi Image Logic ===
   function startBiolumiImageCycle() {
@@ -243,6 +261,189 @@ function stopGreenCycle() {
       }, 50);
   }
 
+  // === Eea Image Logic ===
+  function startEeaImageCycle() {
+    console.log('Starting Eea Image Cycle...');
+    stopEeaCycle(); // Clear existing timers
+
+    eeaTimers.push(setTimeout(() => {
+        eeaImage.src = 'img/interface_eea5.jpg';
+    }, 1000));
+
+    eeaTimers.push(setTimeout(() => {
+        eeaImage.src = 'img/interface_eea4.jpg';
+    }, 2000));
+
+    eeaTimers.push(setTimeout(() => {
+        eeaImage.src = 'img/interface_eea1.png';
+    }, 3000));
+
+    eeaTimers.push(setTimeout(() => {
+        eeaImage.src = 'img/interface_eea.png';
+    }, 4000));
+
+    eeaTimers.push(setTimeout(() => {
+        startEeaImageCycle(); // loop
+    }, 5000));
+}
+
+function stopEeaCycle() {
+    console.log('Stopping Eea Cycle...');
+    eeaTimers.forEach(timer => clearTimeout(timer));
+    eeaTimers = [];
+    eeaImage.style.transition = 'none';
+    eeaImage.src = eeaOriginalImage;
+    setTimeout(() => {
+        eeaImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
+    }, 50);
+}
+
+ // === Stac Image Logic ===
+ function startStacImageCycle() {
+    console.log('Starting Stac Image Cycle...');
+    stopStacCycle(); // Clear existing timers
+
+    stacTimers.push(setTimeout(() => {
+        stacImage.src = 'img/interface_stac4.png';
+    }, 1000));
+
+    stacTimers.push(setTimeout(() => {
+        stacImage.src = 'img/interface_stac5.png';
+    }, 2000));
+
+    stacTimers.push(setTimeout(() => {
+        stacImage.src = 'img/interface_stac6.png';
+    }, 3000));
+
+    stacTimers.push(setTimeout(() => {
+        stacImage.src = 'img/interface_stac3.png';
+    }, 4000));
+
+    stacTimers.push(setTimeout(() => {
+        startStacImageCycle(); // loop
+    }, 5000));
+}
+
+function stopStacCycle() {
+    console.log('Stopping Stac Cycle...');
+    stacTimers.forEach(timer => clearTimeout(timer));
+    stacTimers = [];
+    stacImage.style.transition = 'none';
+    stacImage.src = stacOriginalImage;
+    setTimeout(() => {
+        stacImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
+    }, 50);
+}
+
+// === Hubin Image Logic ===
+function startHubinImageCycle() {
+    console.log('Starting Hubin Image Cycle...');
+    stopHubinCycle(); // Clear existing timers
+
+   
+
+    hubinTimers.push(setTimeout(() => {
+        hubinImage.src = 'img/interface_hubin_2.jpg';
+    }, 1000));
+
+    hubinTimers.push(setTimeout(() => {
+        hubinImage.src = 'img/interface_hubin_3.jpg';
+    }, 2000));
+
+    hubinTimers.push(setTimeout(() => {
+        hubinImage.src = 'img/interface_hubin.png';
+    }, 3000));
+
+    hubinTimers.push(setTimeout(() => {
+        startHubinImageCycle(); // loop
+    }, 4000));
+}
+
+function stopHubinCycle() {
+    console.log('Stopping Hubin Cycle...');
+    hubinTimers.forEach(timer => clearTimeout(timer));
+    hubinTimers = [];
+    hubinImage.style.transition = 'none';
+    hubinImage.src = hubinOriginalImage;
+    setTimeout(() => {
+        hubinImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
+    }, 50);
+}
+
+// === Twin Image Logic ===
+function startTwinImageCycle() {
+    console.log('Starting Twin Image Cycle...');
+    stopTwinCycle(); // Clear existing timers
+
+    twinTimers.push(setTimeout(() => {
+        twinImage.src = 'img/interface_twinseeds_2.jpg';
+    }, 1000));
+
+    twinTimers.push(setTimeout(() => {
+        twinImage.src = 'img/interface_twinseeds_3.jpg';
+    }, 2000));
+
+    twinTimers.push(setTimeout(() => {
+        twinImage.src = 'img/interface_twinseeds_4.jpg';
+    }, 3000));
+
+    twinTimers.push(setTimeout(() => {
+        twinImage.src = 'img/interface_twinseeds.png';
+    }, 4000));
+
+    twinTimers.push(setTimeout(() => {
+        startTwinImageCycle(); // loop
+    }, 5000));
+}
+
+function stopTwinCycle() {
+    console.log('Stopping Twin Cycle...');
+    twinTimers.forEach(timer => clearTimeout(timer));
+    twinTimers = [];
+    twinImage.style.transition = 'none';
+    twinImage.src = twinOriginalImage;
+    setTimeout(() => {
+        twinImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
+    }, 50);
+}
+
+// === Coe Image Logic ===
+function startCoeImageCycle() {
+    console.log('Starting Coe Image Cycle...');
+    stopCoeCycle(); // Clear existing timers
+
+    coeTimers.push(setTimeout(() => {
+        coeImage.src = 'img/coe_2.jpg';
+    }, 1000));
+
+    coeTimers.push(setTimeout(() => {
+        coeImage.src = 'img/coe_3.jpg';
+    }, 2000));
+
+    coeTimers.push(setTimeout(() => {
+        coeImage.src = 'img/coe_4.jpg';
+    }, 3000));
+
+    coeTimers.push(setTimeout(() => {
+        coeImage.src = 'img/coe_1.jpg';
+    }, 4000));
+
+    coeTimers.push(setTimeout(() => {
+        startCoeImageCycle(); // loop
+    }, 5000));
+}
+
+function stopCoeCycle() {
+    console.log('Stopping Coe Cycle...');
+    coeTimers.forEach(timer => clearTimeout(timer));
+    coeTimers = [];
+    coeImage.style.transition = 'none';
+    coeImage.src = coeOriginalImage;
+    setTimeout(() => {
+        coeImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
+    }, 50);
+}
+
   // === Desktop Hover Behavior ===
   if (!isMobile) {
       // biolumi
@@ -327,6 +528,61 @@ greenImage.addEventListener('mouseleave', () => {
         stopKaimenCycle();
     });
 
+    // eea
+    eeaImage.addEventListener('mouseenter', () => {
+        eeaOriginalImage = eeaImage.src;
+        eeaImage.src = 'img/interface_eea5.jpg';
+        startEeaImageCycle();
+    });
+
+    eeaImage.addEventListener('mouseleave', () => {
+        stopEeaCycle();
+    });
+
+     // stac
+     stacImage.addEventListener('mouseenter', () => {
+        stacOriginalImage = stacImage.src;
+        stacImage.src = 'img/interface_stac3.png';
+        startStacImageCycle();
+    });
+
+    stacImage.addEventListener('mouseleave', () => {
+        stopStacCycle();
+    });
+
+    // hubin
+    hubinImage.addEventListener('mouseenter', () => {
+        hubinOriginalImage = hubinImage.src;
+        hubinImage.src = 'img/interface_hubin.png';
+        startHubinImageCycle();
+    });
+
+    hubinImage.addEventListener('mouseleave', () => {
+        stopHubinCycle();
+    });
+
+    // twin
+    twinImage.addEventListener('mouseenter', () => {
+        twinOriginalImage = twinImage.src;
+        twinImage.src = 'img/interface_twinseeds.png';
+        startTwinImageCycle();
+    });
+
+    twinImage.addEventListener('mouseleave', () => {
+        stopTwinCycle();
+    });
+
+    // coe
+    coeImage.addEventListener('mouseenter', () => {
+        coeOriginalImage = coeImage.src;
+        coeImage.src = 'img/coe_1.jpg';
+        startCoeImageCycle();
+    });
+
+    coeImage.addEventListener('mouseleave', () => {
+        stopCoeCycle();
+    });
+      
    
   }
 
@@ -420,6 +676,66 @@ greenImage.addEventListener('mouseleave', () => {
                     stopKaimenCycle();
                 }
             }
+
+            // Check if the eeaImage is in view
+            if (entry.target === eeaImage) {
+                console.log('Eea Image - In View:', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    eeaOriginalImage = eeaImage.src;
+                    eeaImage.src = 'img/interface_eea5.jpg';
+                    startEeaImageCycle();
+                } else {
+                    stopEeaCycle();
+                }
+            }
+
+            // Check if the stacImage is in view
+            if (entry.target === stacImage) {
+                console.log('Stac Image - In View:', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    stacOriginalImage = stacImage.src;
+                    stacImage.src = 'img/interface_stac3.png';
+                    startStacImageCycle();
+                } else {
+                    stopStacCycle();
+                }
+            }
+
+             // Check if the hubinImage is in view
+             if (entry.target === hubinImage) {
+                console.log('Hubin Image - In View:', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    hubinOriginalImage = hubinImage.src;
+                    hubinImage.src = 'img/interface_hubin.png';
+                    startHubinImageCycle();
+                } else {
+                    stopHubinCycle();
+                }
+            }
+
+             // Check if the twinImage is in view
+             if (entry.target === twinImage) {
+                console.log('Twin Image - In View:', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    twinOriginalImage = twinImage.src;
+                    twinImage.src = 'img/interface_twinseeds.png';
+                    startTwinImageCycle();
+                } else {
+                    stopTwinCycle();
+                }
+            }
+
+            // Check if the coeImage is in view
+            if (entry.target === coeImage) {
+                console.log('Coe Image - In View:', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    coeOriginalImage = coeImage.src;
+                    coeImage.src = 'img/coe_1.jpg';
+                    startCoeImageCycle();
+                } else {
+                    stopCoeCycle();
+                }
+            }
           });
       }, {
           root: null,
@@ -434,6 +750,11 @@ greenImage.addEventListener('mouseleave', () => {
       observer.observe(cospImage);
       observer.observe(allnightImage);
       observer.observe(kaimenImage);
+      observer.observe(eeaImage);
+      observer.observe(stacImage);
+      observer.observe(hubinImage);
+      observer.observe(twinImage);
+      observer.observe(coeImage);
   }
 });
 
