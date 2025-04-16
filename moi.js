@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const twinImage = document.getElementById('twinImage');
   const coeImage = document.getElementById('coeImage');
 
-  let biolumiHoverTimer = null;
+  let biolumiTimers = [];
   let biolumiOriginalImage = biolumiImage.src;
 
   let cospTimers = [];
@@ -53,23 +53,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   // === Biolumi Image Logic ===
-  function startBiolumiImageCycle() {
-      console.log('Starting Biolumi Image Cycle...');
-      clearTimeout(biolumiHoverTimer);
-      biolumiHoverTimer = setTimeout(() => {
-          biolumiImage.src = 'img/insectes.png';
-      }, 1000);
+function startBiolumiImageCycle() {
+    console.log('Starting Biolumi Image Cycle...');
+    stopBiolumiCycle(); // Clear existing timers
+  
+    biolumiTimers.push(setTimeout(() => {
+        biolumiImage.src = 'img/insectes.png';
+    }, 1000));
+  
+    biolumiTimers.push(setTimeout(() => {
+        biolumiImage.src = 'img/biolumi.png';
+    }, 2000));
+  
+    biolumiTimers.push(setTimeout(() => {
+        startBiolumiImageCycle(); // loop
+    }, 3000));
   }
-
+  
   function stopBiolumiCycle() {
-      console.log('Stopping Biolumi Cycle...');
-      clearTimeout(biolumiHoverTimer);
-      biolumiHoverTimer = null;
-      biolumiImage.style.transition = 'none';
-      biolumiImage.src = biolumiOriginalImage;
-      setTimeout(() => {
-          biolumiImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
-      }, 50);
+    console.log('Stopping Biolumi Cycle...');
+    biolumiTimers.forEach(timer => clearTimeout(timer));
+    biolumiTimers = [];
+    biolumiImage.style.transition = 'none';
+    biolumiImage.src = biolumiOriginalImage;
+    setTimeout(() => {
+        biolumiImage.style.transition = 'opacity 0.5s ease, visibility 0s ease 0.5s';
+    }, 50);
   }
 
    // === Cosp Image Logic ===
@@ -448,14 +457,16 @@ function stopCoeCycle() {
   if (!isMobile) {
       // biolumi
       biolumiImage.addEventListener('mouseenter', () => {
-          biolumiOriginalImage = biolumiImage.src;
-          biolumiImage.src = 'img/insectes.png';
-          startBiolumiImageCycle();
-      });
-
-      biolumiImage.addEventListener('mouseleave', () => {
-          stopBiolumiCycle();
-      });
+        biolumiOriginalImage = biolumiImage.src;
+        biolumiImage.src = 'img/insectes.png';
+        startBiolumiImageCycle(); // <-- correct this line
+    });
+    
+  
+  biolumiImage.addEventListener('mouseleave', () => {
+    stopBiolumiCycle();
+  });
+  
 
       // cosp
       cospImage.addEventListener('mouseenter', () => {
@@ -592,17 +603,17 @@ greenImage.addEventListener('mouseleave', () => {
 
       const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
-              // Check if the biolumiImage is in view
-              if (entry.target === biolumiImage) {
-                  console.log('Biolumi Image - In View:', entry.isIntersecting);
-                  if (entry.isIntersecting) {
-                      biolumiOriginalImage = biolumiImage.src;
-                      biolumiImage.src = 'img/insectes.png';
-                      startBiolumiImageCycle();
-                  } else {
-                      stopBiolumiCycle();
-                  }
-              }
+             // Check if the biolumiImage is in view
+             if (entry.target === biolumiImage) {
+                console.log('Biolumi Image - In View:', entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    biolumiOriginalImage = biolumiImage.src;
+                    biolumiImage.src = 'img/biolumi.png';
+                    startBiolumiImageCycle();
+                } else {
+                    stopBiolumiCycle();
+                }
+            }
 
               // Check if the cospImage is in view
               if (entry.target === cospImage) {
