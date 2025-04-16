@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Detect if the user is on a mobile device based on viewport width
+  // detect user is on mobile based on viewport width
   const isMobile = window.innerWidth <= 800;
 
   const biolumiImage = document.getElementById('biolumiImage');
